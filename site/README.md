@@ -10,7 +10,7 @@ Edit `src/data/siteData.js`. It contains navigation, homepage covers, project ti
 
 ## Deployment
 
-Pushing `main` runs `.github/workflows/deploy.yml`, which builds `site/` and publishes it to GitHub Pages. The Vite base is `/` because the live site uses the custom root domain. In GitHub: Settings → Pages → Source, select **GitHub Actions**. Add `candacetang.com` as the custom domain; the deployed `CNAME` file already contains it. At the domain registrar, point the apex domain to GitHub Pages using GitHub’s current A/AAAA records and add `www` as a CNAME to the GitHub Pages hostname, following GitHub’s custom-domain guide. Enable HTTPS after DNS resolves.
+Pushing `main` runs `.github/workflows/deploy.yml`, which builds `site/` and publishes it to GitHub Pages. For the temporary project URL, the build uses `/candacetang.com/` as its base path. In GitHub: Settings → Pages → Source, select **GitHub Actions**. After buying the custom domain, change the workflow base path to `/`, restore the `public/CNAME` file containing `candacetang.com`, then add the domain in Pages settings. At the domain registrar, point the apex domain to GitHub Pages using GitHub’s current A/AAAA records and add `www` as a CNAME to the GitHub Pages hostname, following GitHub’s custom-domain guide. Enable HTTPS after DNS resolves.
 
 ## Routing
 
