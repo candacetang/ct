@@ -7,4 +7,4 @@ import './styles/main.css';
 const fallbackRoute = new URLSearchParams(window.location.search).get('route');
 if (fallbackRoute) window.history.replaceState(null, '', fallbackRoute);
 
-createRoot(document.getElementById('root')).render(<StrictMode><BrowserRouter><App /></BrowserRouter></StrictMode>);
+createRoot(document.getElementById('root')).render(<StrictMode><BrowserRouter basename={import.meta.env.BASE_URL}><App /></BrowserRouter></StrictMode>);
