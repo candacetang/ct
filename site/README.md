@@ -213,4 +213,4 @@ When the real `candacetang.com` domain is purchased and connected:
 - Keep `assets-original/` untouched.
 - Test a change locally before pushing when possible.
 - Use descriptive commit summaries so it is easy to understand the site’s history.
-- The site discourages neither saving nor downloading images yet; decide that separately before adding a deterrent.
+- Gallery artwork has light download deterrents: right-click, dragging, and the mobile long-press callout are disabled where browsers allow it. This is not true copy protection; a visitor can still use browser tools or take a screenshot.

@@ -29,7 +29,7 @@ export default function Lightbox({ items, index, onClose, onChange }) {
     <button className="lightbox-close" ref={closeRef} onClick={onClose} aria-label="Close artwork">×</button>
     {items.length > 1 && <button className="lightbox-arrow previous" onClick={previous} aria-label="Previous artwork">←</button>}
     <figure onTouchStart={(event) => { firstTouch.current = event.changedTouches[0].clientX; }} onTouchEnd={(event) => { const delta = event.changedTouches[0].clientX - firstTouch.current; if (Math.abs(delta) > 45) delta > 0 ? previous() : next(); }}>
-      <img src={asset(item.src)} alt={item.alt} />
+      <img src={asset(item.src)} alt={item.alt} draggable="false" onContextMenu={(event) => event.preventDefault()} onDragStart={(event) => event.preventDefault()} />
     </figure>
     {items.length > 1 && <button className="lightbox-arrow next" onClick={next} aria-label="Next artwork">→</button>}
   </div>;
