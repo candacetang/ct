@@ -44,6 +44,32 @@ site/
 - `site/index.html` — Basic page setup, favicon, and link-preview metadata.
 - `site/vite.config.js` — Build settings. It currently supports the temporary `/ct/` GitHub Pages path.
 
+## Change fonts and colors
+
+Open `site/src/styles/main.css`.
+
+At the very top is the shared visual palette:
+
+```css
+:root {
+  --font-main: Arial, Helvetica, sans-serif;
+  --color-text: #4b4b4b;
+  --color-heading: #494949;
+  --color-wordmark: #171717;
+  --color-accent: #a8540b;
+  --color-interactive: #39a5cf;
+  --color-page: #fff;
+}
+```
+
+- Change `--font-main` to change the primary typeface throughout the site. Use a web-safe font name or add a web font separately before using it here.
+- Change `--color-accent` to change the burnt-orange navigation and menu-link color.
+- Change `--color-text` for normal body copy, `--color-heading` for headings, and `--color-wordmark` for the Candace Tang wordmark.
+- Change `--color-interactive` for the About-page social links.
+- Change `--color-page` for the white page background.
+
+For individual sizing and spacing adjustments, use the selector names in the same file. For example: `.wordmark` controls the header name, `.desktop-nav a` controls desktop menu links, `.mobile-menu nav a` controls mobile-menu links, and `.about-copy` controls About-page text.
+
 ## Everyday image updates
 
 ### Rename or replace an existing image
