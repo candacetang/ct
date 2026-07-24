@@ -1,4 +1,4 @@
-export const asset = (filename) => `/assets/${filename}`;
+export const asset = (filename) => `${import.meta.env.BASE_URL}assets/${encodeURI(filename)}`;
 
 export const navigation = [
   { label: 'VIS DEV.', to: '/vis-dev' },
