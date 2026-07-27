@@ -102,9 +102,9 @@ export const animationData = {
   intro: 'Practicing dynamic poses and movement with references to sequences in television and film (not my own original sequences).',
   sectionTitle: 'ACTION SEQUENCES.',
   images: [
-    { src: 'animated1.gif', alt: 'Action sequence animation 1', type: 'gif' },
-    { src: 'animated2.gif', alt: 'Action sequence animation 2', type: 'gif' },
-    { src: 'animated3.gif', alt: 'Action sequence animation 3', type: 'gif' },
+    { src: 'earthbending.gif', alt: 'Action sequence animation 1', type: 'gif' },
+    { src: 'firebending.gif', alt: 'Action sequence animation 2', type: 'gif' },
+    { src: 'waterbending.gif', alt: 'Action sequence animation 3', type: 'gif' },
   ],
 };
 
